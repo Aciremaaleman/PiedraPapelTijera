@@ -1,5 +1,23 @@
 import UIKit
 import GameplayKit
 
+enum Sign {
+    case piedra, papel, tijeras
+    func signIcon() -> String {
+        switch self {
+        case .piedra:
+            return "👊"
+        case .tijeras:
+            return "✌️"
+        default:
+            return "🤚"
+        }
+    }
+    
+    
+}
 
-var str = "Hello,"
+enum GameSet {
+    case inicio, ganar, perder, empatar
+}
+
